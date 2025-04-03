@@ -2,3 +2,67 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    background-color: cadetblue;
+    padding: 5px;
+}
+
+#businessname {
+    color: white;
+    margin: 3px;
+    grid: name;
+}
+
+#zumba {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#whatzumbatitle {
+
+    background-color: cadetblue;
+    
+}
+
+#whatzumbaimg {
+    
+    grid: whatimg;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#whatzumbatext {
+    display: flex;
+    background-color: aquamarine;
+    margin: 10px;
+    justify-self: end;
+
+}
+
+.whatiszumba {
+    
+    background-color: aliceblue;
+    padding: 6px;
+    
+}
+
+@media screen and (min-width: 0px){
+    body{
+        background-color: blueviolet;
+    }
+}
+
+@media screen and (min-width: 688px){
+    body{
+        background-color: fuchsia;
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-color: aquamarine;
+    }
+}
+
+
+

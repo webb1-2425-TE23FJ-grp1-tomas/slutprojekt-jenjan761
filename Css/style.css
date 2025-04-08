@@ -2,15 +2,30 @@
     box-sizing: border-box;
 }
 
+body {
+    margin:0px ;
+}
+
 .navbar {
-    background-color: cadetblue;
+    display: flex;
+    background-color:lightsalmon;
     padding: 5px;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 #businessname {
-    color: white;
-    margin: 3px;
-    grid: name;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style: none;
 }
 
 #zumba {
@@ -18,49 +33,56 @@
     max-height: 100%;
 }
 
-#whatzumbatitle {
-
-    background-color: cadetblue;
-    
+#minititles {
+    grid: whattitle;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif ;
 }
 
 #whatzumbaimg {
-    
     grid: whatimg;
-    max-height: 100%;
-    max-width: 100%;
+    border-radius: 4px;
 }
 
 #whatzumbatext {
-    display: flex;
-    background-color: aquamarine;
+    grid: whattext;
     margin: 10px;
-    justify-self: end;
-
 }
 
 .whatiszumba {
-    
     background-color: aliceblue;
     padding: 6px;
-    
+    border-radius: 4px;
+}
+
+.whystart {
+    background-color: aqua;
 }
 
 @media screen and (min-width: 0px){
-    body{
-        background-color: blueviolet;
+    .whatiszumba {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whatcontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media screen and (min-width: 688px){
-    body{
-        background-color: fuchsia;
+    .whatcontent {
+        flex-direction: row;
+        align-items: center;
     }
 }
 
 @media screen and (min-width: 992px){
-    body{
-        background-color: aquamarine;
+    .whatcontent {
+        flex-direction: row;
+        align-items: center;
     }
 }
 

@@ -20,13 +20,14 @@ body {
     font-family:'Courier New', Courier, monospace;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
+.links {
+    list-style-type: none;
 }
 
-ul {
-    list-style: none;
+.menu-link {
+    outline: solid thin lightblue;
+    display: block;
+    padding: 15px;
 }
 
 #zumba {
@@ -87,21 +88,30 @@ ul {
 
 .mediaimg {
     border-radius: 100%;
-    width: 8%;
+    max-width: 10%;
 }
 
-#contactgrid {
-    grid-area: contacts;
-    background-color: aquamarine;
+
+.btn:hover {
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+    font-size: 120%;
 }
 
-#mediagrid {
-    grid-area: media;
-    background-color: bisque;
+#facebook {
+    display: flex;
+}
+
+#instagram {
+    display: flex;
 }
 
 .end {
     background-color: aliceblue;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px;
 }
 
 @media screen and (min-width: 0px){

@@ -10,8 +10,8 @@ body {
 .navbar {
     display: flex;
     background-color:lightsalmon;
-    padding: 5px;
-    align-items: baseline;
+    padding: 15px;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -20,14 +20,17 @@ body {
     font-family:'Courier New', Courier, monospace;
 }
 
-.links {
+.menu {
     list-style-type: none;
+    padding: 0;
 }
 
 .menu-link {
     outline: solid thin lightblue;
     display: block;
-    padding: 15px;
+    padding: 0px 15px; /*0px på top och botten 15px vänster och höger */
+    text-decoration: none;
+    color: black;
 }
 
 #zumba {
@@ -86,11 +89,11 @@ body {
     background-color: antiquewhite;
 }
 
-.mediaimg {
-    border-radius: 100%;
-    max-width: 10%;
-}
 
+.btn {
+    text-decoration: none;
+    color: black;
+}
 
 .btn:hover {
     cursor: pointer;
@@ -114,6 +117,10 @@ body {
     margin: 10px;
 }
 
+#menu-open {
+    display: block;
+}
+
 @media screen and (min-width: 0px){
     #whatiszumba {
         display: flex;
@@ -131,6 +138,13 @@ body {
         align-items: center;
         gap: 15px;
     }
+    .mediaimg {
+        border-radius: 100%;
+        max-width: 10%;
+    }
+    .menu {
+        display: none;
+    }
     
 }
 
@@ -146,6 +160,12 @@ body {
         "title title title"
         "community excercise exciting";
     }
+    .menu {
+        display: flex;
+    }
+    #menu-open {
+        display: none;
+    }
     
 }
 
@@ -153,6 +173,10 @@ body {
     .whatcontent {
         flex-direction: row;
         align-items: center;
+    }
+    .mediaimg {
+        border-radius: 100%;
+        width: 5%;
     }
 }
 

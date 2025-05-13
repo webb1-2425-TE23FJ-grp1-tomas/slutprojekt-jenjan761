@@ -25,12 +25,26 @@ body {
     padding: 0;
 }
 
+.menu-item:first-of-type {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .menu-link {
-    outline: solid thin lightblue;
     display: block;
     padding: 0px 15px; /*0px på top och botten 15px vänster och höger */
+    margin: 9px 0px;
     text-decoration: none;
+    font-size: 100%;
     color: black;
+    text-align: right;
+}
+
+.menu-link:hover {
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+    font-size: 120%;
 }
 
 #zumba {
@@ -117,9 +131,7 @@ body {
     margin: 10px;
 }
 
-#menu-open {
-    display: block;
-}
+
 
 @media screen and (min-width: 0px){
     #whatiszumba {
@@ -144,7 +156,11 @@ body {
     }
     .menu {
         display: none;
+        flex-direction: column;
     }
+    #menu-open {
+    display: block;
+}
     
 }
 
@@ -162,8 +178,12 @@ body {
     }
     .menu {
         display: flex;
+        flex-direction: row;
     }
     #menu-open {
+        display: none;
+    }
+    #menu-close {
         display: none;
     }
     

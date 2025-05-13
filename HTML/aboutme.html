@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">
-    <title>Document</title>
+    <title>KarlaZumba</title>
+    <script src="../Javaskript/main.js" defer></script> 
+    <!-- script är i slutet av head  då den har defer, eftersom den ej render-blockar -->
 </head>
 
 <body>
@@ -14,12 +16,80 @@
         <nav>
             <img id="menu-open" src="../Images/hamburgermenu (1).webp" alt="Mobile menu">
             <ul class="menu">
+                <li class="menu-item"><img id="menu-close" src="../Images/close (1).png" alt="closebtn"/> </li>
                 <li class="menu-item"><a href="../HTML/index.html" class="menu-link">Hem</a></li>
                 <li class="menu-item"><a href="../HTML/aboutme.html" class="menu-link">Om mig</a></li>
                 <li class="menu-item"><a href="../HTML/calender.html" class="menu-link">Kalender</a></li>
+                
             </ul>
         </nav>
     </header>
+    <img id="zumba" src="../Images/zumba.webp" alt="zumba">
+    <article class="article" id="whatiszumba">
+        <h2 class="minititles">Vad är Zumba?</h2>
+        <div class="whatcontent">
+            <img id="whatzumbaimg" src="../Images/whatzymbaimg.webp" alt="what">
+            <p id="whatzumbatext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, est? Repellendus
+                repudiandae suscipit
+                accusamus, nisi sequi, necessitatibus explicabo fugiat ab quidem quo itaque totam voluptates
+                aliquid,
+                hic voluptas est atque?</p>
+        </div>
+    </article>
+    <article class="article" id="whystart">
+        <div class="minititles">
+            <h2>Zumba ger</h2>
+        </div>
+        <div class="reason" id="community">
+            <h2>Gemenskap</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non voluptate fugit
+                exercitationem natus facere quae aspernatur officia odio odit explicabo distinctio ex
+                repellendus, consequuntur minima suscipit possimus maiores modi! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Nam officiis facilis dolore assumenda earum velit! Iure autem
+                consequatur sequi iste, explicabo eum facere dicta aliquam dolor eligendi, fugiat deserunt! Ratione!
+            </p>
+        </div>
+        <div class="reason" id="excercise">
+            <h2>Motion</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ea inventore eligendi
+                distinctio fugiat eos magni doloremque necessitatibus debitis! In eligendi consectetur officiis
+                praesentium aut cumque ipsa sunt quibusdam perferendis. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Dolore commodi sequi mollitia ad explicabo tempora fuga debitis repellat. Esse ab
+                alias eaque dicta vero quo, sed facilis itaque id soluta?</p>
+        </div>
+        <div class="reason" id="exciting">
+            <h2>Spänning</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quia numquam qui delectus
+                eligendi placeat, veniam quod nostrum culpa pariatur molestiae, labore similique est consectetur
+                saepe reiciendis harum libero sit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aspernatur, sint autem amet maxime voluptatibus dignissimos porro laborum velit quod similique
+                aliquam rem quos ut commodi praesentium beatae? Vitae, velit tempora.</p>
+        </div>
+    </article>
+    <div class="end">
+        <div id="contactgrid">
+            <h2>Kontakter</h2>
+            <ul id="contacts">
+                <li>karla.zumba@gmail.com</li>
+                <li>076-101 45 32</li>
+            </ul>
+        </div>
+        <div id="mediagrid">
+            <h2>Sociala medier</h2>
+            <div id="instagram">
+                <img class="mediaimg" src="../Images/nedladdning.webp" alt="insta">
+                <a class="btn" href="https://www.instagram.com/zumb.akarla/">
+                    <p>@zumb.akarla</p>
+                </a>
+            </div>
+            <div id="facebook">
+                <img class="mediaimg" src="../Images/facebook.webp" alt="book">
+                <a class="btn" href="https://www.facebook.com/people/A-k-Zumba-Karla-Rojas/61550768725816/">
+                    <p>A-k Zumba Karla Rojas</p>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

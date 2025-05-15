@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/splide-core.min.css">
     <title>KarlaZumba</title>
-    <script src="../Javaskript/main.js" defer></script> 
+    <script src="../Javaskript/main.js" defer></script>
+    <script src="../Javaskript/splide.min.js" defer></script>
     <!-- script är i slutet av head  då den har defer, eftersom den ej render-blockar -->
 </head>
 
@@ -16,25 +18,35 @@
         <nav>
             <img id="menu-open" src="../Images/hamburgermenu (1).webp" alt="Mobile menu">
             <ul class="menu">
-                <li class="menu-item"><img id="menu-close" src="../Images/close (1).png" alt="closebtn"/> </li>
-                <li class="menu-item"><a href="../HTML/index.html" class="menu-link">Hem</a></li>
-                <li class="menu-item"><a href="../HTML/aboutme.html" class="menu-link">Om mig</a></li>
-                <li class="menu-item"><a href="../HTML/calender.html" class="menu-link">Kalender</a></li>
-                
+                <li class="menu-item"><img id="menu-close" src="../Images/close (1).png" alt="closebtn" /> </li>
+                <li class="menu-item"><a href="HTML/index.html" class="menu-link">Hem</a></li>
+                <li class="menu-item"><a href="HTML/aboutme.html" class="menu-link">Om mig</a></li>
+                <li class="menu-item"><a href="HTML/calender.html" class="menu-link">Kalender</a></li>
             </ul>
         </nav>
     </header>
     <img id="zumba" src="../Images/zumba.webp" alt="zumba">
 
-    <section class="splide" aria-label="Splide Basic HTML Example">
-  <div class="splide__track">
-		<ul class="splide__list">
-			<li class="splide__slide">Slide 01</li>
-			<li class="splide__slide">Slide 02</li>
-			<li class="splide__slide">Slide 03</li>
-		</ul>
-  </div>
-</section>
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="../Images/mariahall.webp" alt="mariahall">
+                </li>
+                <li class="splide__slide">
+                    <img src="../Images/alfahallen.webp" alt="alfahall">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide');
+            splide.mount();
+        });
+    </script>
+
 
 
     <div class="end">

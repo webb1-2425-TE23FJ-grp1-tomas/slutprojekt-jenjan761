@@ -133,7 +133,28 @@ body {
 
 .splide__slide img {
   width: 100%;
-  height: auto;
+  border-radius: 6px;
+  height: 600px;
+}
+
+.splide {
+    grid-area: splide;
+    padding: 10px;
+}
+
+#titlekarla {
+    grid-area: titlekarla;
+}
+
+#textkarla {
+    grid-area: textkarla;
+}
+
+#karlarojas {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px;
 }
 
 
@@ -191,6 +212,23 @@ body {
     }
     #menu-close {
         display: none;
+    }
+    .splide__slide img {
+        grid-area: carousel;
+        height: 80%;
+        width: 80%;
+    }
+    .splide {
+        height: 80%;
+        width: 80%;  
+    }
+    #karlarojas {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        "titlekarla titlekarla"
+        "splide textkarla";
     }
     
 }

@@ -5,40 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">
-    
+
     <title>KarlaZumba</title>
     <script src="../Javaskript/main.js" defer></script>
-    
+
     <!-- script är i slutet av head  då den har defer, eftersom den ej render-blockar -->
 </head>
 
 <body>
     <header class="navbar">
-        <p id="businessname">Karlas Zumba</p>
+        <p><a id="businessname" href="../index.html">Karlas Zumba</a></p>
         <nav>
             <img id="menu-open" src="../Images/hamburgermenu (1).webp" alt="Mobile menu">
             <ul class="menu">
                 <li class="menu-item"><img id="menu-close" src="../Images/close (1).png" alt="closebtn" /> </li>
-                <li class="menu-item"><a href="../HTML/index.html" class="menu-link">Hem</a></li>
-                <li class="menu-item"><a href="../HTML/aboutme.html" class="menu-link">Om mig</a></li>
-                <li class="menu-item"><a href="../HTML/calender.html" class="menu-link">Kalender</a></li>
+                <li class="menu-item"><a href="../index.html" class="menu-link">Hem</a></li>
+                <li class="menu-item"><a href="aboutme.html" class="menu-link">Om mig</a></li>
+                <li class="menu-item"><a href="calender.html" class="menu-link">Kalender</a></li>
             </ul>
         </nav>
     </header>
     <img id="zumba" src="../Images/zumba.webp" alt="zumba">
 
-    
-
-    
-
-
+    <div id="daytimes">
+        <h2 class="minititles">Dagar och tider</h2>
+        <nav id="textdaytimes">
+            <ul id="griddays">
+                <li class="days">
+                    Måndag
+                </li>
+                <li class="days">
+                    Torsdag
+                </li>
+            </ul>
+            <ul id="gridtimes">
+                <li class="times">
+                    19:00
+                </li>
+                <li class="times">
+                    19:00
+                </li>
+            </ul>
+            <ul id="gridplace">
+                <li class="places">
+                    Mariahallen
+                </li>
+                <li class="places">
+                    Alfahallen
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <div class="end">
         <div id="contactgrid">
             <h2>Kontakter</h2>
             <ul id="contacts">
-                <li>karla.zumba@gmail.com</li>
-                <li>076-101 45 32</li>
+                <li class="reachout">karla.zumba@gmail.com</li>
+                <li class="reachout">076-101 xx xx</li>
             </ul>
         </div>
         <div id="mediagrid">
@@ -57,7 +81,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

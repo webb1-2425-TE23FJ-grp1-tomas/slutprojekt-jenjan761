@@ -16,8 +16,15 @@ body {
 }
 
 #businessname {
+    text-decoration: none;
+    color: black;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
+    padding: 5px;
+}
+
+#businessname:hover {
+    cursor: pointer;
 }
 
 .menu {
@@ -111,7 +118,15 @@ body {
 
 .btn:hover {
     cursor: pointer;
-    color: black;
+    color: orange;
+    transition: 0.5s;
+    font-size: 120%;
+}
+
+.reachout:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: orange;
     transition: 0.5s;
     font-size: 120%;
 }
@@ -157,8 +172,16 @@ body {
     margin: 10px;
 }
 
+#daytimes {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px;
+}
 
-
+#textdaytimes {
+    font-size: 150%;  
+}
 
 @media screen and (min-width: 0px){
     #whatiszumba {
